@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Cookbook</title>
+    <script src="MicrosoftTeams.min.js"></script>
+    <script>
+        microsoftTeams.initialize();
+        microsoftTeams.appInitialization.notifyAppLoaded();
+        microsoftTeams.appInitialization.notifySuccess();
+        microsoftTeams.settings.registerOnSaveHandler(function (saveEvent) {
+            microsoftTeams.settings.setSettings({
+                entityID: "com.companycookbook",
+                suggestedTabName: "Cookbook",
+                contentUrl: window.location.origin,
+                websiteUrl: window.location.origin,
+            });
+            saveEvent.notifySuccess();
+        });
+        microsoftTeams.settings.setValidityState(true);
+    </script>
+</head>
+
+<body>
+    Press save to continue
+</body>
+
+</html>

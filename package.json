@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "axios": "0.24.0",
+    "ejs": "3.1.6",
+    "express": "4.17.1",
+    "link-preview-js": "2.1.8",
+    "mongoose": "6.0.12"
+  },
+  "name": "companycookbook",
+  "description": "An easy-to-use recipe sharing app to help employees focus on nutrition",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MkFoster/companycookbook.git"
+  },
+  "author": "Mark Foster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MkFoster/companycookbook/issues"
+  },
+  "homepage": "https://github.com/MkFoster/companycookbook#readme"
+}
